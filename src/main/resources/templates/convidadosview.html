@@ -5,13 +5,19 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width" />
 	<title>Lista de Convidados</title>
-	<link th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" rel="stylesheet" />
-	<link th:href="@{/webjars/bootstrap/css/bootstrap-theme.min.css}" rel="stylesheet" />
+	<!--Import Google Icon Font-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+	<!--Import materialize.css-->
+	<link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css" media="screen,projection" />
+
+	<!--Let browser know website is optimized for mobile-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
 <body>
 
 	<body>
+		
 		<div class="panel panel-default" style="margin: 10px">
 			<div class="panel-heading">
 				<h1 class="panel-title">Lista de convidados</h1>
@@ -33,10 +39,17 @@
 				</table>
 			</div>
 		</div>
+		<form class="form-inline" method="POST" style="margin: 20px">
+			<div class="form-group">
+				<input type="text" class="form-control" placeholder="Nome" />
+				<input type="text" class="form-control" placeholder="Acompanhantes" />
+				<a class="waves-effect waves-light btn"><i class="material-icons right">add</i>Adicionar</a>
+			</div>
+		</form>
 	</body>
 
-	<script th:src="@{/webjars/jquery/jquery.min.js}"></script>
-	<script th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
+	<!--JavaScript at end of body for optimized loading-->
+	<script type="text/javascript" src="materialize/js/materialize.min.js"></script>
 </body>
 
 </html>
